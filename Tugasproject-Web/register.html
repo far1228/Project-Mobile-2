@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FFEEF4;
+        }
+
+        .register-container {
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        .captcha-container {
+            margin: 15px 0;
+        }
+
+        .btn-submit, .btn-register {
+            width: 100%;
+            padding: 15px;
+            background-color: black;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .btn-submit:hover, .btn-register:hover {
+            background-color: #555;
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .separator::before, .separator::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .separator span {
+            margin: 0 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .social-button {
+            width: 48%;
+            padding: 15px;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .facebook-btn {
+            background-color: #3b5998;
+        }
+
+        .google-btn {
+            background-color: #9BEC00;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>REGISTER ACCOUNT</h2>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="button" class="btn-register" onclick="window.location.href='login.html'">REGISTER</button>
+        </form>
+        <div class="separator">
+            <span>OR</span>
+        </div>
+        <div class="social-buttons">
+            <button class="social-button facebook-btn" onclick="window.location.href='//r.search.yahoo.com/_ylt=AwrKAC3i7C5nfAIAQPLLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1732338147/RO=10/RU=https%3a%2f%2fwww.facebook.com%2flogin.php%2f/RK=2/RS=vMNJxNMQMTq.QRuwS3bt00ufajo-'">FACEBOOK</button>
+            <button class="social-button google-btn" onclick="window.location.href='//r.search.yahoo.com/_ylt=AwrKCSKf7C5n7QEA3DLLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1732338080/RO=10/RU=https%3a%2f%2fsupport.google.com%2faccounts%2fanswer%2f12849458%3fhl%3den/RK=2/RS=X4isK1SNDH.ZCv7D0_gGIbllEJg-'">GOOGLE</button>
+        </div>
+    </div>
+</body>
+</html>
