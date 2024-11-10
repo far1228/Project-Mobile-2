@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #FFEEF4;
+        }
+
+        .container {
+            text-align: center;
+            width: 400px; 
+        }
+
+        h2 {
+            font-size: 32px; 
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            font-size: 20px; 
+        }
+
+        .forgot-password {
+            font-size: 17px; 
+            color: #FF90BC;
+            text-decoration: none;
+            margin-bottom: 30px;
+            display: flex;
+            text-align: left;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px; 
+            font-size: 20px; 
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .login {
+            background-color: #000;
+        }
+        .login:hover{
+            background-color: #555;
+        }
+
+        .register {
+            background-color: #000;
+        }
+
+        .register:hover{
+            background-color: #555;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .divider span {
+            font-size: 16px; 
+            color: #333;
+            padding: 0 15px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .social-btn {
+            width: 48%;
+            padding: 15px;
+            font-size: 16px; 
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .facebook {
+            background-color: #3b5998;
+        }
+
+        .google {
+            background-color: #9BEC00;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SIGN IN</h2>
+        <form>
+            <div class="input-container">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button type="button" class="btn login" onclick="window.location.href='home.html'">LOGIN</button>
+            <button type="button" class="btn register" onclick="window.location.href='register.html'">REGISTER</button>
+            <div class="divider">
+                <span>OR</span>
+            </div>
+            <p>SIGN IN WITH...</p>
+            <div class="social-buttons">
+                <button class="social-btn facebook" onclick="window.location.href='//r.search.yahoo.com/_ylt=AwrKAC3i7C5nfAIAQPLLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1732338147/RO=10/RU=https%3a%2f%2fwww.facebook.com%2flogin.php%2f/RK=2/RS=vMNJxNMQMTq.QRuwS3bt00ufajo-'">Facebook</button>
+                <button class="social-btn google" onclick="window.location.href='//r.search.yahoo.com/_ylt=AwrKCSKf7C5n7QEA3DLLQwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1732338080/RO=10/RU=https%3a%2f%2fsupport.google.com%2faccounts%2fanswer%2f12849458%3fhl%3den/RK=2/RS=X4isK1SNDH.ZCv7D0_gGIbllEJg-'">Google</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
